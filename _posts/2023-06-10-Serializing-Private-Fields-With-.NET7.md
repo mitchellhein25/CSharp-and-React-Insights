@@ -15,7 +15,7 @@ In this article, Wullems discusses a new feature introduced in .NET 7 that allow
 
 The main focus of the article is a code snippet that demonstrates how to utilize the new feature in .NET 7 to achieve serialization of private fields and properties. The code snippet showcases a method called `AddInternalPropertiesModifier` that modifies a `JsonTypeInfo` object by adding information about internal properties of an object.
 
-```csharp
+{% highlight csharp %}
 void AddInternalPropertiesModifier(JsonTypeInfo jsonTypeInfo)
 {
      if (jsonTypeInfo.Kind != JsonTypeInfoKind.Object)
@@ -30,6 +30,7 @@ void AddInternalPropertiesModifier(JsonTypeInfo jsonTypeInfo)
         jsonTypeInfo.Properties.Add(jsonPropertyInfo);
     }
 }
+{% endhighlight %}
 
 ## Explanation
 
@@ -39,7 +40,7 @@ void AddInternalPropertiesModifier(JsonTypeInfo jsonTypeInfo)
 
 - The Get property of the JsonPropertyInfo object is assigned the GetValue method of the property obtained from reflection. This means that when the JSON serializer needs to retrieve the value of this property during serialization, it will use the GetValue method to obtain the value.
 
-- The Set property is set similarly to the Get property.
+- The Set property is set in a similar fashion.
 
 - Finally, the created JsonPropertyInfo object is added to the Properties collection of the jsonTypeInfo object.
 
