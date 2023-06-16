@@ -3,7 +3,7 @@ title: "Trunk Based Development"
 date: 2023-06-15
 ---
 
-The article of the day for me was the following: [Why I prefer trunk-based development](https://trishagee.com/2023/05/29/why-i-prefer-trunk-based-development/?utm_source=programmingdigest&utm_medium&utm_campaign=1660). Whether you agree with the viewpoint or not, this is certainly an interested concept to discuss.
+The article of the day for me was the following: [Why I prefer trunk-based development](https://trishagee.com/2023/05/29/why-i-prefer-trunk-based-development/?utm_source=programmingdigest&utm_medium&utm_campaign=1660). Whether you agree with the viewpoint or not, this is certainly an interesting concept to discuss.
 
 ## Definition
 
