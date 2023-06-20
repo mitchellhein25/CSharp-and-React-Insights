@@ -1,5 +1,5 @@
 ---
-title: "HttpRequestData vs HttpRequest in Azure Functions"
+title: "HttpRequestData in Azure Functions"
 date: 2023-06-19
 ---
 
