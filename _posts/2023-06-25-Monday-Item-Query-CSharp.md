@@ -11,7 +11,7 @@ public static MondayItem GetMondayItemDetails(string mondayApiKey, string itemId
     string mondayItemsQuery =
         {% raw %}
         $@"{{
-            ""query"": ""{{% raw %}}{{items (ids: [{itemId}]) {{name, column_values {{ title, value}} }}}}{{% endraw %}}""
+            ""query"": ""{{items (ids: [{itemId}]) {{name, column_values {{ title, value}} }}}}""
         }}";
         {% endraw %}
     string itemJson = HttpRequestMethods.HttpRequest(
