@@ -9,9 +9,11 @@ The following example can be used to retrieve a Monday item via the Monday v2 AP
 public static MondayItem GetMondayItemDetails(string mondayApiKey, string itemId)
 {
     string mondayItemsQuery =
+        {% raw %}
         $@"{{
             ""query"": ""{{% raw %}}{{items (ids: [{itemId}]) {{name, column_values {{ title, value}} }}}}{{% endraw %}}""
         }}";
+        {% endraw %}
     string itemJson = HttpRequestMethods.HttpRequest(
         "POST", Constants.MondayApiUrl, mondayItemsQuery, mondayApiKey);
 
