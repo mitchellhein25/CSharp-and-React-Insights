@@ -7,7 +7,7 @@ In Monday, an integration can be set up to send a webhook when an action occurs.
 
 ![image](https://github.com/mitchellhein25/CSharp-and-React-Insights/assets/58825307/3b06cc13-63b6-4ab9-985c-b82a3596ca00)
 
-- The webhook is sent with the following json body:
+The webhook is sent with the following json body:
 
 ```json
 {
