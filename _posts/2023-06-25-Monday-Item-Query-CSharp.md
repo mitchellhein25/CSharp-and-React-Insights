@@ -10,7 +10,7 @@ public static MondayItem GetMondayItemDetails(string mondayApiKey, string itemId
 {
     string mondayItemsQuery =
         $@"{{
-            ""query"": ""{{items (ids: [{itemId}]) {{name, column_values {{ title, value}} }} }}""
+            ""query"": ""{{{{items (ids: [{itemId}]) {{name, column_values {{ title, value}} }} }}}}""
         }}";
     string itemJson = HttpRequestMethods.HttpRequest(
         "POST", Constants.MondayApiUrl, mondayItemsQuery, mondayApiKey);
