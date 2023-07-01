@@ -47,7 +47,6 @@ React Query allows you to specify additional query parameters by adding them to 
 Consider the following example:
 
 ```jsx
-Copy code
 import { useQuery } from 'react-query';
 import axios from 'axios';
 
