@@ -19,16 +19,16 @@ Load balancing involves various algorithms, which can be broadly categorized int
 
 #### Static Algorithms
 
-- **Round-robin method:**
-- **Weighted round-robin method:**
-- **IP hash method:**
+- **Round-robin method**
+- **Weighted round-robin method**
+- **IP hash method**
   
 #### Dynamic Algorithms
 
-- **Least connection method:**
-- **Weighted least connection method:**
-- **Least response time method:**
-- **Resource-based method:**
+- **Least connection method**
+- **Weighted least connection method**
+- **Least response time method**
+- **Resource-based method**
 
 For a quick explanation of each algorithm and more details, you can refer to the article titled [What is load balancing?](https://aws.amazon.com/what-is/load-balancing/#:~:text=Load%20balancing%20is%20the%20method,a%20fast%20and%20reliable%20manner.) provided by AWS.
 
@@ -36,11 +36,11 @@ For a quick explanation of each algorithm and more details, you can refer to the
 
 Load balancing can be achieved through various types of load balancers and corresponding technologies. These include:
 
-- **Hardware Load Balancers:**
-- **Software Load Balancers:**
-- **Layer 4 (Transport) Load Balancers:**
-- **Layer 7 (Application) Load Balancers:**
-- **Global Load Balancers:**
+- **Hardware Load Balancers**
+- **Software Load Balancers**
+- **Layer 4 (Transport) Load Balancers**
+- **Layer 7 (Application) Load Balancers**
+- **Global Load Balancers**
 
 To gain a comprehensive understanding of load balancers and their technologies, consider reading the AWS article mentioned earlier.
 
