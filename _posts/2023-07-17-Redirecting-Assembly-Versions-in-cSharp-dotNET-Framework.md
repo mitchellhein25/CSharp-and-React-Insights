@@ -39,7 +39,7 @@ It is possible to programmatically perform a redirect using the following event:
 
 The following errors can sometimes be confusing and not clear about what can be done to fix the issue. Often times, an assembly redirect is needed to resolve the problem.
 
-1. `FileNotFoundException` or `AssemblyResolveException`:
+1. `FileNotFoundException`:
 This error occurs when the runtime cannot find the specified assembly version referenced by your application. It typically happens when the expected assembly version is not available on the system.
 
 2. `VersionMismatchException`:
