@@ -5,7 +5,7 @@ date: 2023-07-21
 
 In modern web applications, file uploads are a common requirement, allowing users to submit documents, images, and other files through forms. In this quick blog, we will explore how to create a simple file upload tool using React and demonstrate how to integrate it into a form.
 
-## Prerequisites:
+## Intro:
 
 In a recent project, we had a specific requirement to enable users to upload Excel files in a React application. These files were intended to be processed on a server. In this article, we will focus on the crucial part of the code that utilizes Axios to send the uploaded file to the server.
 
