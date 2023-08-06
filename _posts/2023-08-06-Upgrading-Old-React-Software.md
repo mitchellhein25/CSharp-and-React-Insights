@@ -14,7 +14,7 @@ In the ever-evolving world of software development, legacy projects can pose sig
   - Renaming and updating component names to adhere to modern conventions.
   - Phasing out end-of-life libraries to ensure a more robust and sustainable codebase.
   - Exploring new ways of utilizing existing components for improved efficiency.
-  - 
+    
 ***State Management***
 
 Overhauling the outdated state management solution to enhance code organization and boost application performance.
