@@ -3,7 +3,7 @@ title: "Connecting to Microsoft Graph API with a Client Secret - C#"
 date: 2024-05-20
 ---
 
-In this blog post, we’ll walk you through the process of integrating Microsoft Graph API into your .NET application. Microsoft Graph provides a unified programmability model that you can use to access a vast amount of data in Microsoft 365. My use case was push data into Sharepoint.
+In this blog post, we’ll walk you through the process of integrating Microsoft Graph API into your .NET application. Microsoft Graph provides a unified programmability model that you can use to access a vast amount of data in Microsoft 365. My use case was pushing data into Sharepoint.
 
 ## Step 1: Register Your App in Microsoft Entra
 
