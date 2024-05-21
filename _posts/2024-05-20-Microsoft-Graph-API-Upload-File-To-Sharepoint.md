@@ -2,14 +2,14 @@
 title: "Uploading Files to Sharepoint using Microsoft Graph API - C#"
 date: 2024-05-20
 ---
+In this blog post, we will explore how to upload files to a SharePoint folder using the Microsoft Graph API. If you haven't already, make sure to refer to my [previous article on authentication to set up your authentication with Microsoft Graph](https://mitchellhein25.github.io/CSharp-and-React-Insights/2024/05/20/Microsoft-Graph-API-Access-Token-Client-Secret.html).
 
-Refer to my other article for how to authenticate: 
-https://mitchellhein25.github.io/CSharp-and-React-Insights/2024/05/20/Microsoft-Graph-API-Access-Token-Client-Secret.html
+Once you have your authentication in place, follow the steps below to upload files to SharePoint.
 
-And here is some new code for uploading small or large files to a Sharepoint folder:
+## Step 1: Get the Drive ID
+The first step in uploading a file is to get the Drive ID associated with your SharePoint site and list.
 
 ``` csharp
-
 private async Task<string> GetDriveId(string siteId, string listId)
 {
     Drive listDrive = await _graphClient.Sites[siteId]
@@ -23,7 +23,11 @@ private async Task<string> GetDriveId(string siteId, string listId)
     }
     return listDrive.Id;
 }
+```
+## Step 2: Get or Create the Folder by Name
+Next, you need to get the folder by name or create it if it doesn't exist.
 
+``` csharp
 private async Task<DriveItem> GetFolderByFolderName(string driveId, string folderName)
 {
     DriveItemCollectionResponse folderSearch = null;
@@ -61,7 +65,10 @@ private async Task<DriveItem> GetFolderByFolderName(string driveId, string folde
 
     return folder;
 }
-
+```
+## Step 3: Upload the File to the Folder
+Finally, upload your file to the specified folder. This method handles both small and large files using an upload session.
+``` csharp
 private async Task UploadFileToFolder(string filePath, string driveId, string folderId)
 {
     using (Stream fileStream = File.OpenRead(filePath))
@@ -100,3 +107,5 @@ private async Task UploadFileToFolder(string filePath, string driveId, string fo
     }
 }
 ```
+
+By following these steps, you can upload files to a SharePoint folder using the Microsoft Graph API. This method ensures that your files are uploaded efficiently, regardless of their size.
