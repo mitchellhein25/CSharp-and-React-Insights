@@ -108,4 +108,4 @@ private async Task UploadFileToFolder(string filePath, string driveId, string fo
 }
 ```
 
-By following these steps, you can upload files to a SharePoint folder using the Microsoft Graph API. This method ensures that your files are uploaded efficiently, regardless of their size.
+By following these steps, you can upload files to a SharePoint folder using the Microsoft Graph API.
